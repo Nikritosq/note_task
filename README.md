@@ -104,6 +104,14 @@ const pool = new Pool({
 
 module.exports = pool;
 ```
+### Useful Tip ###
+If there is some problrms with this, then add new variavle to path manualy:
+find in **Windows Parameters** Changing enviroment variables - it opens tab *System settings* - there is button **Enviroment settings/parameters** - Must choose *PATH* and press **Edit** - **Add** and insert the way to *PostgreSQL\12\bin* and *PostgreSQL\12\lib*
+And run PostgreSQL through PowerShell
+If there is 'No rights' message in terminal - also in PowerShell:
+```PowerShell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+```
 
 ## Testing ##
 
