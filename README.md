@@ -1,12 +1,4 @@
 # Note Task #
-<style>
-.weblist {
-    margin-left: 10px;
-}
-hr {
-    opacity: 0;
-}
-</style>
 [![Website](https://img.shields.io/website?label=Node%20Task&down_color=lightgrey&down_message=Node%20Task&style=flat-square&up_color=%23f50057&up_message=TRY&url=https%3A%2F%2Fnotesaionystask.web.app%2F)](https://notesaionystask.web.app/)
 Web app on PERN Stack with Puppeteer testing
 
