@@ -1,0 +1,64 @@
+:root {
+    --hew: calc(100%/3);//header segment width
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: #d8d8d8;
+    display: flex;
+    max-height: 50px;
+    z-index: 101;
+    .header_left {
+        width: var(--hew);
+        display: flex;
+        overflow: hidden;
+        .logo {
+            background: url(./../images/aionys_logo.svg) center no-repeat;
+            background-size: cover;
+            height: 40px;
+            width: 40px;
+            margin: 5px;
+        }
+    }
+    .header_center {
+        width: var(--hew);
+        form {
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 20px;
+            margin: 5px;
+            input {
+                background-color: transparent;
+                flex: 1;
+                max-width: calc(100% - 40px);
+                outline: none;
+            }
+            button {
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+            }
+        }
+    }
+    .header_right {
+        width: var(--hew);
+        .nik {
+            float: right;
+            height: 40px;
+            margin: 5px;
+            p {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 18pt;
+            }
+        }
+    }
+}

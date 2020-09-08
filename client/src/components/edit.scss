@@ -1,0 +1,122 @@
+button {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.darkness {
+    z-index: -5;
+    position: fixed;
+    margin: 0 !important;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.45);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    .edit_field {
+        width: 70%;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: -1px 2px 8px 1px rgba($color: #000000, $alpha: 0.25);
+        button {
+            background-color: transparent;
+        }
+        .ms_top div *, .ms_bot * {
+            margin: 10px;
+            cursor: pointer;
+        }
+        .ms_top {
+            margin: 0;
+            form {
+                margin: 20px;
+                display: block;
+                .main_input {
+                    margin: 0;
+                    width: calc(70vw - 40px);
+                    .ms_input {
+                        width: 100%;
+                        margin: 0;
+                        font-size: 16pt;
+                        font-style: italic;
+                        outline: none;
+                    }
+                }
+                .hash_input {
+                    margin: 10px 0 10px 0;
+                    display: flex;
+                    .hash_default {
+                        width: 0;
+                        height: 35px;
+                        margin: 0;
+                        border-radius: 17.5px;
+                        transition-duration: 0.4s, 0.4s;
+                    }
+                    .hash_default::placeholder{
+                        opacity: 0;
+                        transition-duration: 0.2s, 0.2s;
+                    }
+                    .cross {
+                        margin: 0;
+                        outline: none;
+                        transition-duration: 0.4s, 0.4s;
+                        svg {
+                            margin: 0;
+                            width: 35px;
+                            height: auto;
+                            background-color: #ffffff;
+                            border-radius: 17.5px !important;
+                        }
+                    }
+                    .cross_active {
+                        transform: translateX(-35px) rotate(45deg);
+                    }
+                    .hash_active {
+                        display: flex !important;
+                        width: 135px;
+                        height: 35px;
+                        border-radius: 17.5px !important;
+                        background-color: #F6C4D6;
+                        color: #0d0d0d;
+                        padding-left: 17.5px;
+                        margin: 0;
+                        border-radius: 10px;
+                        outline: none;
+                    }
+                    .hash_active::placeholder{
+                        opacity: 1;
+                        transition-duration: 0.4s, 0.4s;
+                    }
+                }
+                .ms_hidden {
+                    display: none;
+                }
+            }
+        }
+        hr {
+            width: calc(100% - 20px);
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 1px solid #DFDFDF ;
+        }
+        .ms_bot {
+            display: flex;
+            justify-content: space-around;
+            button {
+                margin: 0;
+            }
+            svg:hover {
+                fill: red;
+            }
+        }
+    }
+}
+
+.forward {
+    z-index: 100;
+    display: flex;
+}

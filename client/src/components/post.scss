@@ -1,0 +1,48 @@
+.post {
+    width: 70%;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px 10px 0 10px;
+    box-shadow: -1px 2px 8px 1px rgba($color: #000000, $alpha: 0.25);
+    .post_top *, .post_bot * {
+        margin: 10px;
+    }
+    .post_top {
+        display: flex;
+        align-items: center;
+        .hashtag_on {
+            max-width: 150px;
+            height:35px;
+            color: white;
+            background-color: #f50057;
+            border-radius: 17.5px;
+            display: flex;
+            cursor: pointer;
+            justify-items: center;
+            align-items: center;
+            padding: 0 10px 0 10px;
+        }
+    }
+    .post_bot {
+        img {
+            margin: 0;
+            width: 100%;
+            height: auto;
+        }
+        .options {
+            margin: 0;
+            display: flex;
+            .mpt {
+                flex: 1;
+            }
+            button {
+                margin:0;
+                background: none;
+                outline: none;
+                svg:hover {
+                    fill:red;
+                }
+            }
+        }
+    }
+}

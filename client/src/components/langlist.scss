@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Rubik-Medium';
+    src: url(./../fonts/Rubik-Medium.eot) format('embedded-opentype'),  url(./../fonts/Rubik-Medium.woff) format('woff'), url(./../fonts/Rubik-Medium.ttf)  format('truetype'), url(./../fonts/Rubik-Medium.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}  
+
+.lang_list {
+    position: relative;
+    float: right;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin: 5px;
+    display: inline-block;
+    background-color: white;
+    overflow: hidden;
+    transition-duration: 0.4s, 0.4s;
+    .selected_v {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f50057;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        font-family: 'Rubik-Medium';
+        color: white;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        transition-duration: 0.4s, 0.4s;
+    }
+    button {
+        background: none;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        background-color: #d8d8d8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        opacity: 0;
+        transition-duration: 0.4s, 0.4s;
+        cursor: pointer;
+        svg {
+            width: 30px;
+            height: auto;
+            transition-duration: 0.4s, 0.4s;
+            path {
+                fill: #424242;
+            }
+        }
+    }
+    .mpt_btn {
+        position: fixed;
+        height: 40px;
+        z-index: 110;
+        background: none;
+    }
+    .mpt_btn_activ {
+        display: none;
+    }
+    .close_btn {
+        background: #d8d8d8;
+        svg {
+            fill: #424242;
+        }
+    }
+}
+
+.lang_active {
+    height: 221px;
+    .selected_v {
+        margin: 4px;
+        height: 32px;
+        width: 32px;
+        font-size: 10.5pt;
+    }
+    button {
+        margin: 4px;
+        height: 32px;
+        width: 32px;
+        opacity: 1;
+        svg {
+            width: 26px;
+            height: auto;
+        }
+    }
+    .selected {
+        background-color: #f50057;
+        svg {
+            path {
+                fill: white;
+            }
+        }
+    }
+}
