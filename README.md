@@ -1,17 +1,11 @@
-# Note Task
-<style>
-.weblist {
-    margin-left: 10px;
-}
-hr {
-    opacity: 0;
-}
-</style>
+# Note Task #
+
 [![Website](https://img.shields.io/website?label=Node%20Task&down_color=lightgrey&down_message=Node%20Task&style=flat-square&up_color=%23f50057&up_message=TRY&url=https%3A%2F%2Fnotesaionystask.web.app%2F)](https://notesaionystask.web.app/)
+
 Web app on PERN Stack with Puppeteer testing
 
 <img class="weblist" align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" /><img class="weblist" align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" /><img class="weblist" align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" /><img class="weblist" align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" /><img class="weblist" align="left" alt="Sass" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png" /><img class="weblist" align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" /><img class="weblist" align="left" alt="React" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png" /><img class="weblist" align="left" alt="React" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" /><img class="weblist" align="left" alt="Node.js" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" /><img class="weblist" align="left" alt="GitHub" width="26px" src="https://habrastorage.org/webt/mr/mp/vo/mrmpvoy3c9sicju-zbxkob3i-3w.png" /><img class="weblist" align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
-<hr/>
+
 Test preview on Firebase <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png" height = "20px">
 
 ## Something before we start ##
@@ -41,7 +35,7 @@ CLIENT:
 npm start
 ```
 
-###If there is problems with *npm install* we can do next:
+### If there is problems with *npm install* we can do next:
 
 Create new two empty foldes with names 'client' and 'server'.
 Open 'server' with VS Code and run in terminal:
@@ -69,7 +63,7 @@ npm install jest
 npm install puppeteer
 ```
 
-##PostgreSQL
+## PostgreSQL
 
 We need a data base, but we won't use too popular MongoDB.
 So we are installing [PostgreSQL][downloadlink]!
@@ -111,7 +105,8 @@ const pool = new Pool({
 module.exports = pool;
 ```
 
-##Testing
+## Testing ##
+
 We've downloaded all dependencies, so nothing special
 The testing file is App.test.js. Make sure YOU are in client directory.
 
@@ -124,6 +119,6 @@ And watch how puppeteer working!
 
 **WARNING!** If terminal says there is *test* undefind look at App.test.js file and comment on same row with *test*
 
-#I HOPE EVERYTHING WORK ON YOUR SIDE!
+# I HOPE EVERYTHING WORK ON YOUR SIDE!
 
 [downloadlink]: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
