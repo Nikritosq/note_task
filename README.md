@@ -1,4 +1,4 @@
-# Note Task
+# Note Task #
 <style>
 .weblist {
     margin-left: 10px;
@@ -38,7 +38,7 @@ CLIENT:
 ```bash
 npm start
 ```
-###If there is problems with *npm install* we can do next:
+###If there is problems with *npm install* we can do next: ###
 Create new two empty foldes with names 'client' and 'server'.
 Open 'server' with VS Code and run in terminal:
 ```bash
@@ -64,7 +64,7 @@ npm install node-sass --save
 npm install jest
 npm install puppeteer
 ```
-##PostgreSQL
+##PostgreSQL##
 We need a data base, but we won't use too popular MongoDB.
 So we are installing [PostgreSQL][downloadlink]!
 Nothing special - we dont need any scecific packages and don't change any variables during the installation. Only what have to be setted up is password. Enter everything YOU want. After finishing of it we can open our ```cmd``` and run 
@@ -105,7 +105,7 @@ const pool = new Pool({
 module.exports = pool;
 ```
 
-##Testing
+##Testing##
 We've downloaded all dependencies, so nothing special
 The testing file is App.test.js. Make sure YOU are in client directory.
 
@@ -118,6 +118,6 @@ And watch how puppeteer working!
 
 **WARNING!** If terminal says there is *test* undefind look at App.test.js file and comment on same row with *test*
 
-#I HOPE EVERYTHING WORK ON YOUR SIDE!
+#I HOPE EVERYTHING WORK ON YOUR SIDE!#
 
 [downloadlink]: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
